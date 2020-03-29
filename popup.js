@@ -34,26 +34,26 @@ changeColor.onclick = function(element) {
                     .body
                     .children[1]
                     .children[1]
-                            .children[0]
-                            .children[0]
-                            .contentWindow
-                            .document
-                            .body
-                            .children[5]
-                            .children[0]
-                            .children[7]
-                            .children[11]
-                            .children[1]
-                            .children[0]
-                            .children[2]
-                            .children[1]
-                            .children[5]
-                            .children[7]
-                            .children
+                    .children[0]
+                    .children[0]
+                    .contentWindow
+                    .document
+                    .body
+                    .children[5]
+                    .children[0]
+                    .children[7]
+                    .children[11]
+                    .children[1]
+                    .children[0]
+                    .children[2]
+                    .children[1]
+                    .children[5]
+                    .children[7]
+                    .children
                     
                     var lastOption = select[select.length  - 1]
-                    
                     var valueOriginal;
+                    
                     if(!valueOriginal){
                         valueOriginal = lastOption.value
                     }
