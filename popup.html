@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+        .aplicar {
+            width: 50px;
+            text-align: center;
+          border-style: none;
+          margin:  10px auto;
+          color: #fff;
+          border-radius: 4px;
+          padding: 10px;
+          cursor: pointer;
+          font-size: 15px;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: linear-gradient(135deg, rgba(232,103,16,1) 0%, rgba(255,234,0,1) 100%);
+        }
+        .titleGenio{
+            color: #fff;
+            margin: 0 10px 0px 10px;
+			z-index: 10;
+
+        }
+        .genioInput{
+            border-radius: 4px;
+            border-style: none;
+            padding: 10px;
+            background: #fff;
+            margin: 10px;
+			z-index: 10;
+
+        }
+        .icon{
+            margin: 10px 0 0 80px;
+            width: 40px;
+			z-index: 10;
+        }
+
+      </style>
+    </head>
+    <body>
+		<img src="128.png" class="icon" alt="">
+        <h1 class="titleGenio">GenioDescuento</h1>
+        <input type="number" value="5" placeholder="¿Cuanto Genio descuento?" class="genioInput" id="genioInput">
+      <div class="aplicar" id="changeColor">Aplicar</div>
+      <script src="grim.js"></script>
+      <script src="popup.js"></script>
+    </body>
+  </html>
