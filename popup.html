@@ -1,58 +1,92 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <style>
-        .aplicar {
-            width: 50px;
-            text-align: center;
-          border-style: none;
-          margin:  10px auto;
-          color: #fff;
-          border-radius: 4px;
-          padding: 10px;
-          cursor: pointer;
-          font-size: 15px;
-        }
+        <style>
+.aplicar {
+    width: 25px;
+    height: 25px;
+    border-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom:-8px;
+    margin-left:-35px;
+    z-index:100;
+    background-color:#91C93C;
+}
 
-        *{
-            padding: 0;
-            margin: 0;
-        }
+.aplicarBad {
+    width: 25px;
+    height: 25px;
+    border-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom:-8px;
+    margin-left:-35px;
+    z-index:100;
+    background-color:#EE7773;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
         body{
-            background: linear-gradient(135deg, rgba(232,103,16,1) 0%, rgba(255,234,0,1) 100%);
+            background-color: #1C2D56;
+            border-radius:50px;
         }
         .titleGenio{
             color: #fff;
             margin: 0 10px 0px 10px;
-			z-index: 10;
+            z-index: 10;
 
         }
         .genioInput{
             border-radius: 4px;
             border-style: none;
             padding: 10px;
-            background: #fff;
-            margin: 10px;
-			z-index: 10;
+            background: #121F3D;
+            margin: 10px 0px 20px 20px;
+            z-index: 10;
+            color: #fff;
 
+        }
+        ::placeholder{
+            color:#fff;
         }
         .icon{
             margin: 10px 0 0 80px;
             width: 40px;
-			z-index: 10;
+            z-index: 10;
+        }
+        .cobertura{
+            width:230px;
+            height:50px;
+            margin-bottom:10px;
         }
 
-      </style>
+        </style>
     </head>
     <body>
-		<img src="128.png" class="icon" alt="">
-        <h1 class="titleGenio">GenioDescuento</h1>
-        <input type="number" value="5" placeholder="¿Cuanto Genio descuento?" class="genioInput" id="genioInput">
-      <div class="aplicar" id="changeColor">Aplicar</div>
-      <script src="grim.js"></script>
-      <script src="popup.js"></script>
+        <div class="cobertura">
+            <input type="number" value="" placeholder="Cobertura" class="genioInput" id="genioInput">
+            <div class="aplicar" id="changeColor"></div>
+        </div>
+        <div class="cobertura">
+            <input type="number" value="" placeholder="Año" class="genioInput" id="genioInput">
+            <div class="aplicar" id="year"></div>
+        </div>
+        <div class="cobertura">
+            <input type="number" value="" placeholder="Descuento" class="genioInput" id="genioInput">
+            <div class="aplicarBad" id="descuento"></div>
+        </div>
+        <script src="grim.js"></script>
+        <script src="popup.js"></script>
     </body>
-  </html>
+</html>
